@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Lester HW8b - Exercise 1</title>
+    <script src="/ex1.js" defer></script>
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav><a href="../">Back to Index</a></nav>
+    <h1>James Lester HW8b - Exercise 1</h1>
+    <hr>
+    <h2>Sample Form</h2>
+    <form id="form">
+        <div>
+            <span>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </span>
+        </div><br>
+        <div>
+            <span>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </span>
+        </div><br>
+        <div>
+            <fieldset>
+                <legend>Payment Type:</legend>
+            <input type="radio" id="cash" name="payment" value="Cash">
+            <label for="cash">Cash</label><br>
+
+            <input type="radio" id="cc" name="payment" value="Credit Card">
+            <label for="cc">Credit Card</label><br>
+
+            <input type="radio" id="gp" name="payment" value="Google Pay">
+            <label for="gp">Google Pay</label><br>
+
+            <input type="radio" id="ap" name="payment" value="Apple Pay">
+            <label for="ap">Apple Pay</label>
+            </fieldset>
+        </div><br>
+        <div>
+            <span>
+                <input type="checkbox" name="promotion" id="promotion">
+                <label for="promotion">Sign me up for special promotions</label>
+            </span>
+        </div><br>
+        <div>
+            <span>
+                <label for="location">Preferred Location:</label>
+                <select name="location" id="location">
+                    <option value="la">Los Angeles</option>
+                    <option value="oc">Orange County</option>
+                    <option value="rs">Riverside</option>
+                    <option value="sd">San Diego</option>
+                </select>
+            </span>
+        </div><br>
+        <div>
+            <span>
+                <input type="submit" value="Submit">
+                <input type="button" value="Cancel" id="cancel">
+            </span>
+        </div>
+    </form>
+    <div id="confirmationArea"></div>
+
+</body>
+
+</html>
