@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "Node.js",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"mounts": [
+		"source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind"
+	],
+	"remoteEnv": {
+		"SSH_AUTH_SOCK": "/ssh-agent"
+	},	
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"git.autofetch": true,
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"ritwickdey.liveserver",
+				"christian-kohler.path-intellisense"
+			]
+		}
+	}
+}
